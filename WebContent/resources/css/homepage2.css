@@ -1,0 +1,334 @@
+@charset "utf-8";
+
+ul{
+	  margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+#wrap {
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+body {
+	
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #666666;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+  list-style-type: disc;
+  
+}
+#quickmenu {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    width: 79px;
+    margin: -230px 0 0;
+    z-index: 1;
+}
+
+
+/* 타이틀 CSS  */
+/* 타이틀 기본 양식  */
+.header {
+    width: 100%;
+    height: 110px;
+    position: relative;
+    top: 0;
+    left:0px;
+    z-index: 1000;
+    border-bottom: 1px solid #eeeeee;
+    background: white;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.header_in{
+	position: fixed;
+}
+#menu_sub{
+	text-align:center;
+	margin-left : 20pt;
+	height: 100px;
+ width: 600px;
+ display: inline-block;
+ float: left;
+
+}
+#store_logo > img{
+	position: fixed;
+	height: 10pt;
+	width: 10pt;
+	}
+#store_logo:hover{
+	top:100pt;
+}
+
+#store_logo{
+	font-size: 8pt;
+	height: 100px;
+	width: 200px;
+	background: url("../images/sub_menu_logo2.png");
+}
+#store_logo > a{
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+#store_logo > img {
+	top:-15pt;
+	left:-25pt;
+	height: 50px;
+	width: 50px;
+}
+
+#store_logo>div{
+	position:absolute;
+	display :inline-block;
+	color:white;
+	top : 0;
+	right: 0;
+	height: 50pt;
+	width: 100pt;
+}
+#menu_sub > li{
+	
+	 display: inline-block;
+ width : 146px;
+float: left;
+}
+
+#menu_sub > li >a > img{
+height: 20pt;
+width: 20pt;
+
+}
+#content{
+	width: 100%;
+	height:100%;
+}
+/* 사용할 박스 크기  */
+.header > .header_in {
+    width: 1200px; 
+    height: 100px;
+	left :230pt;
+    box-sizing: border-box; /* 테두리 크기를 포함한 길이 */
+    position: relative;
+}
+/*로고 위치  */
+.header > .header_in #logo{
+position: absolute; /* position: static 속성을 가지고 있지 않은 부모를 기준으로 움직입니다  */
+top: 15px;
+display:inline;
+  left:60px;
+margin: 0 auto;
+   
+}
+
+.header > .header_in > #logo > img{
+ vertical-align: top;
+}
+
+.header > .header_in > .menu_list {
+margine : 0;
+padding : 0;
+list-style-type:none;
+position: absolute;
+display:inline-block;
+height:100%;
+width:100%;
+	 left: 150px;
+	 font-size: 15pt;
+	}
+ #menu_main{
+ position: relative;
+
+ border:solid 1px;
+ width:800px;
+ height:110px;
+ list-style: none;
+ background: none;
+
+ }
+	
+#menu_main > li{
+ display: inline-block;
+ float: left;
+ width: 130px;
+}
+
+#menu_main > li > a{
+
+}
+
+#new_event{
+	font-size: 10pt;
+	background-color: blue;
+}
+.header > .header_in > .menu_list > #menu_main{
+	margin: 0;
+}
+.header > .header_in > .menu_list > ul  /*리스트 메뉴 가로로 정렬  */
+{
+	 position:absolute;
+	float:left;
+	display: inline-block;
+
+		
+	list-style:none;
+
+		width:110pt;
+		height:100%;
+		line-height: 110px;
+		text-align:center;
+		font-size:15pt;
+		font-style:"Myeongjo";
+		vertical-align: middle;  
+}
+.menu_list > ul > #hd_banner {
+	left:0;
+	visibility: hidden;
+	font-size: 20pt;
+	
+}
+.menu_list > ul > #hd_banner > div > ul >li {
+	position:absolute;
+	display:inline-block;
+	left:80pt;
+	visibility: hidden;
+	background-color : fuchsia;
+	font-size: 20pt;
+}
+ @keyframes move {
+
+      from {
+        height:0px;
+      }
+
+      to {
+        height: 300px;
+      }
+    }
+
+@keyframes move1 {
+
+      from {
+    	opacity : 0;
+      }
+		50%{
+		opacity :0;
+		}
+      to {
+   		opactiy : 1;
+      }
+    }
+.header > div > #hd_name {
+ visibility: hidden;
+
+ }
+
+.header:hover #hd_name{
+   position:fixed;
+   	  top: 108px;
+   	  left:0;
+      width : 100%;
+      height: 300px;
+      background-color: black;
+      animation-name: move;
+      animation-duration: 0.5s;
+      animation-iteration-count: 1;
+      opacity: 0.8;
+      visibility:visible;
+      display: block;
+}
+.header #hd_name > a {
+	
+
+}
+
+#menu_sub{
+	position: fixed;
+}
+
+.header:hover #hd_name > a > img{
+	animation-name: move1;
+
+      animation-duration: 0.5s;
+      animation-iteration-count: 1;
+      opacity: 1;
+	}
+
+#imgs{
+	visibility:hidden; 
+}
+.header:hover #imgs > a {
+   position:fixed;
+   	  top: 118px;
+   	  left:0;
+   
+	}
+	
+ .header:hover #imgs > a > img{
+	float:right;
+ position: relative;
+right:-1000pt;     
+        top: 50px;
+opacity:1.0;
+display: inline-block;
+   animation-name: move1;
+      animation-duration: 0.3s;
+      animation-iteration-count: 1;
+      opacity: 1;
+      visibility:visible;
+      display: inline-block;
+} 
+
+#hd_submenu{
+	visibility:hidden;
+	 position:fixed;
+	border:1px solid;
+	top:100pt;
+	/* left : 367pt; */
+	font-size: 13pt;
+	color: navy;
+	 height:  200px;
+	 border: 1px solid;
+	
+   margin: 0 auto;
+	text-align: center;
+	opacity: 0.5;
+	width: 600pt;
+	float: left;
+
+}
+
+#hd_submenu > table {
+	width: 600pt;
+	height: 100pt;
+}
+#hd_submenu > table > tr > td {
+	width: auto;
+	height: 10px;
+}
+.header:hover #hd_submenu{
+	  animation-name: move1;
+      animation-duration: 0.5s;
+      animation-iteration-count: 1;
+      opacity: 1;
+      visibility:visible;
+      display: block;
+	
+}
+ 
